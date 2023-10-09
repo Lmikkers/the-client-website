@@ -4,92 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bRAIN</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <!-- Hier komt het logo, die ga ik positioneren met absolute left 2rem? -->
-                <li><a class="logo" href="#"></a></li>
-
-                <li><a href="#">Waarom</a></li>
-                <li><a href="#">bRAIN</a></li>
-                <li><a href="#">Hoe doe je mee</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+    <header id="#home">
+        <nav class="menu">
+            <div class="navContainer">
+                <a class="logo" href="#home"></a>
+                <ul>
+                    <li><a href="#waarom">Waarom</a></li>
+                    <li><a href="#brain">Waarom bRAIN</a></li>
+                    <li><a href="#contact">Hoe doe je mee</a></li>
+                    <li><a class="btn" href="#">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
-        <h1>Wees slim met ons water, be b-RAIN!</h1>
-        <h2>Welkom bij b-RAIN, de toekomst van ons water.</h2>
+        <section>
+            <h1>Wees slim met ons water, be b-RAIN!</h1>
+            <h2>Welkom bij b-RAIN, de toekomst van ons water.</h2>
 
-        <img src="#" alt="icoontjes">
-        <img src="#" alt="icoontjes">
-        <img src="#" alt="icoontjes">
-        
-        <a id="down" href="#">chevron icoontje</a>
+            <div class="problemSolving">
+                <img src="#" alt="icoontjes">
+                <img src="#" alt="icoontjes">
+                <img src="#" alt="icoontjes">
+            </div>
+
+            <!-- Hier moet een slider komen met daarin links het probleem en rechts de oplossing -->
+            
+            <a id="down" href="#">scroll</a>
+        </section>
     </header>
 
     <main>
+
+
         <!-- Het idee is dat elke section een ID krijgt waarmee ik het menu kan linken (scrollen) -->
         <section id="waarom">
-            <h2>Waarom</h2>
-            <p>Onze wereld wordt geconfronteerd met steeds extremere weersomstandigheden. We krijgen te maken met langdurige droogte en intensere neerslag. Dit zorgt ervoor dat we, om de stad leefbaar te houden, beter voorbereid moeten zijn op dergelijke extremen. Iedereen kan helpen in deze opgave: bewoners, bedrijven en gemeenten.</p>
-            <a href="#">Lees meer ></a>
+            <div class="container">
+                
+                <article class="contentBlock">
+                    <h2>Waarom</h2>
+                    <p>Onze wereld wordt geconfronteerd met steeds extremere weersomstandigheden. We krijgen te maken met langdurige droogte en intensere neerslag. Dit zorgt ervoor dat we, om de stad leefbaar te houden, beter voorbereid moeten zijn op dergelijke extremen. Iedereen kan helpen in deze opgave: bewoners, bedrijven en gemeenten.</p>
+                    <a href="#">Lees meer ></a>
+                </article>
 
-            <article>
-                <img src="#" alt="">
-                <h3>Subtitle</h3>
-            </article>
+                <div class="imagesBlock">
+                    <article class="image">
+                        <img src="#" alt="">
+                        <h3>Subtitle</h3>
+                    </article>
 
-            <article>
-                <img src="#" alt="">
-                <h3>Subtitle</h3>
-            </article>
+                    <article class="image">
+                        <img src="#" alt="">
+                        <h3>Subtitle</h3>
+                    </article>
 
-            <article>
-                <img src="#" alt="">
-                <h3>Subtitle</h3>
-            </article>
+                    <article class="image">
+                        <img src="#" alt="">
+                        <h3>Subtitle</h3>
+                    </article>
+                </div>
+
+            </div>
         </section>
 
-        <section id="bRAIN">
-            
-            <h2>bRAIN</h2>
-            <p>b-RAIN is de manier om zo optimaal mogelijk om te gaan met de neerslag rondom je huis. Met slimme technologie, gebaseerd op weersvoorspellingen, regelt ons product automatisch de hoeveelheid water in de regenton, zodat je altijd het meeste uit je waterreservoir haalt zonder er tijd aan kwijt te zijn.</p>
-
-            <button>Tekst</button>
 
 
-            <img src="#" alt="">
 
-            <!-- Lijstje met icoonen over uitleg bRAIN -->
-            <ul>
-                <li><a href="">icoon</a></li>
-                <li><a href="">icoon</a></li>
-                <li><a href="">icoon</a></li>
-                <li><a href="">icoon</a></li>
-            </ul>
+        <section id="brain" class="whyBrain">
+            <div class="container">
+                <article>
+                    <div class="content">
+                        <h2>bRAIN</h2>
+                        <p>b-RAIN is de manier om zo optimaal mogelijk om te gaan met de neerslag rondom je huis. Met slimme technologie, gebaseerd op weersvoorspellingen, regelt ons product automatisch de hoeveelheid water in de regenton, zodat je altijd het meeste uit je waterreservoir haalt zonder er tijd aan kwijt te zijn.</p>
 
+                        <button class="btn">Tekst</button>
+                    </div>
+                    <div class="image">
+                        <img src="#" alt="">
+                    </div>
+                </article>
+                
+
+                <!-- Lijstje met icoonen over uitleg bRAIN -->
+                <ul>
+                    <li><a href="">icoon</a></li>
+                    <li><a href="">icoon</a></li>
+                    <li><a href="">icoon</a></li>
+                    <li><a href="">icoon</a></li>
+                </ul>
+            </div>
         </section>
+
+
+
+
 
         <section id="contact">
+            <div class="container">
+                <article class="contentBlock">
+                    <h2>Hoe doe je mee</h2>
+                    <p>Met behulp van de gratis Brain-app heeft u ieder moment van de dag inzicht in uw wateropslag. Op deze manier krijgt u inzicht in de hoeveelheid water die u beschikbaar heeft, hoeveel u bespaard heeft maar ook wat de verwachtte wateropslag is voor de komende zeven dagen.</p>
+                    <a href="">pijl down</a>
+                </article>
 
-            <h2>Hoe doe je mee</h2>
-            <p>Met behulp van de gratis Brain-app heeft u ieder moment van de dag inzicht in uw wateropslag. Op deze manier krijgt u inzicht in de hoeveelheid water die u beschikbaar heeft, hoeveel u bespaard heeft maar ook wat de verwachtte wateropslag is voor de komende zeven dagen.</p>
-            <a href="">pijl down</a>
+                <svg></svg>
 
-            <svg></svg>
+                <form action="">
+                    <input type="text" name="naam" id="" placeholder="Naam">
+                    <input type="email" name="email" id="" placeholder="voorbeeld@mail.nl">
 
-            <form action="">
-                <input type="text" name="naam" id="" placeholder="Naam">
-                <input type="email" name="email" id="" placeholder="voorbeeld@mail.nl">
+                    <textarea type="textarea" name="bericht"></textarea>
 
-                <textarea type="textarea" name="bericht"></textarea>
+                    <input type="submit" value="submit">
 
-                <input type="submit" value="submit">
-
-            </form>
-
+                </form>
+            </div>
         </section>
     </main>
 

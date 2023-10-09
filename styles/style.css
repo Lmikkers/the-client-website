@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--darkblue);
+}
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+}
+h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+h2 {
+    font-size: 1.8em;
+    margin: 2em 0 0.8em 0;
+}
+p {
+    margin-bottom: 1em;
+}
+a {
+    text-decoration: none;
+    color: var(--spat);
+}
+:root {
+    --spat: #7faec5;
+    --lg-bg: #fafafa;
+    --green: #4ecd5d;
+    --darkblue: #384b61;
+    /* --body-font: 'Open Sans', sans-serif;
+    --title-font: 'Raleway', sans-serif; */
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.6rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+}
+
+
+.image img{
+    width: 100%;
+    height: 100%;
+    background: var(--lg-bg);
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+    object-fit: cover;
+}
+
+
+
+
+/* MENU STYLE */
+.menu{
+    position: fixed;
+    width: 100vw;
+    height: 4rem;
+    
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    align-items: center;
+    
+    background: white;
+    box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+.menu ul li a {
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    color: var(--spat);
+    transition: all 0.3s ease;
+    font-size: 1.25em;
+}
+.menu a:hover {
+    color: var(--green);
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+    background: var(--spat);
+}
+/* END MENU STYLE */
+
+
+
+.btn,
+.menu a.btn {
+    color: white;
+    background-color: var(--green);
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    padding: 0.6em 1em;
+    border: none;
+}
+
+
+
+
+/* HEADER */
+header section {
+    padding-right: 6rem;
+    padding-left: 6rem;
+    padding-top: 4rem;
+    /* position: relative; */
+    /* display: grid; */
+    height: calc(100vh - 4rem);
+    background: var(--lg-bg);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+header h1 {
+    margin-top: 2em;
+}
+header h2 {
+    color: var(--spat);
+    margin-top: 0;
+}
+
+.problemSolving {
+    /* width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    width: 100%;
+    display: grid;
+    align-self: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+.problemSolving img {
+    background: cadetblue;
+    width: 100%;
+    height: 24vw;
+}
+/* END HEADER */
+
+
+
+/* LINKS */
+a#down {
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--darkblue);
+}
+/* END LINKS */
+
+
+
+
+
+main section {
+    padding: 8rem 0 4rem;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+main section:nth-child(even) {
+    background-color: var(--lg-bg);
+}
+
+main section .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main section .btn {
+    font-size: 1em;
+}
+
+
+.contentBlock {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.contentBlock a {
+    margin-top: 1em;
+}
+
+.imagesBlock {
+    margin-top: 4em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr ;
+    grid-gap: 4em;
+}
+.imagesBlock article {
+    width: 100%;
+    min-height: 50vmin;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imagesBlock article img {
+    margin-bottom: 1em;
+}
+
+
+
+
+.whyBrain article{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+}
+
+.whyBrain ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3em;
+    margin-top: 5em;
+    align-self: center;
+    justify-self: center;
+}
+
+.whyBrain ul li {
+    background-color: var(--spat);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+}
+
+
+
+
+/* RESPONSIVE */
+
+
+@media only screen and (max-width: 1024px) {
+    .problemSolving {
+        grid-gap: 2em;
+    }
+}
+
+
+/* MOBIEL */
+@media only screen and (max-width: 600px) {
+    .contentBlock {
+        width: 100%;
+    }
+
+    .imagesBlock,
+    .problemSolving,
+    .whyBrain article {
+        grid-template-columns: 1fr;
+    }
+
+    .whyBrain ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+/* END MOBIEL */
+
+
+
+/* END RESPONSIVE */
